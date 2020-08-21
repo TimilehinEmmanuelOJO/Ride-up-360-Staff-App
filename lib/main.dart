@@ -9,17 +9,11 @@ class RideHub extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
-        body: SafeArea(
-          child: Container(
-            constraints: BoxConstraints.expand(),
-            decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('images/downloads.jpg'),
-              fit: BoxFit.cover),
-            ),
-          ),
+        backgroundColor: Image.network('https://cdn.dribbble.com/users/729829/screenshots/5594777/galshir-winter-cycling_2x.jpg').color,
+        body: Container(
+
         ),
-      ),
-    );
+        ),
+      );
   }
 }

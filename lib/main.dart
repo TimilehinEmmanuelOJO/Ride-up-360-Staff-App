@@ -1,3 +1,6 @@
+
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,11 +12,18 @@ class RideHub extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Image.network('https://cdn.dribbble.com/users/729829/screenshots/5594777/galshir-winter-cycling_2x.jpg').color,
         body: Container(
-
+          decoration: new BoxDecoration(
+            color: Colors.black,
+            image: new DecorationImage(
+              fit: BoxFit.cover,
+              colorFilter: ColorFilter.mode(Colors.blue.withOpacity(0.7), BlendMode.dstATop),
+              image: AssetImage('images/IMG_0792.JPG'),
+              //TODO: ensure you put a container on the image and a text which says welcome.
+            ),),
         ),
-        ),
+           ),
       );
   }
 }
+

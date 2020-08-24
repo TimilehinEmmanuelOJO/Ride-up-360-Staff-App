@@ -26,7 +26,18 @@ class RideHub extends StatelessWidget {
               child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   SizedBox(height: 20,),
-                  Image(image: AssetImage('images/ridehub360.png')),
+                  Row(
+                    children: <Widget>[
+                      SizedBox(width: 20,),
+                      Image(image: AssetImage('images/ridehub360.png')),
+                      Column(children: <Widget>[
+                        SizedBox(height: 45,),
+                        Text('IDEHUB360.COM',
+                          style: TextStyle(color: Colors.grey,fontSize: 25,fontWeight: FontWeight.bold,),),
+                      ],
+                      ),
+                    ],
+                  ),
                   SizedBox(
                     height: 500,
                   ),

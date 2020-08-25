@@ -36,6 +36,7 @@ class MyHome extends StatelessWidget {
                           'Email:',
                           style: TextStyle(
                               color: Colors.white,
+                              fontFamily: 'RobotoMono-BoldItalic.ttf',
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
                               fontStyle: FontStyle.italic),
@@ -59,6 +60,7 @@ class MyHome extends StatelessWidget {
                       'Password:',
                       style: TextStyle(
                           color: Colors.white,
+                          fontFamily: 'RobotoMono-BoldItalic.ttf',
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
                           fontStyle: FontStyle.italic),
@@ -67,24 +69,28 @@ class MyHome extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 25,),
-              Container(
-                height: 60,
-                width: 150,
-                decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.5),
-                    border: Border.all(color: Colors.brown),
-                    borderRadius: BorderRadius.all(Radius.circular(10))),
-                child: Row(mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[SizedBox(width: 20,),
-                    Text(
-                      'SIGN IN',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic),
-                    ),
-                  ],
+              FlatButton(onPressed: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => HomePage()),),
+                child: Container(
+                  height: 60,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.5),
+                      border: Border.all(color: Colors.brown),
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[SizedBox(width: 20,),
+                      Text(
+                        'SIGN IN',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'RobotoMono-BoldItalic.ttf',
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -92,5 +98,17 @@ class MyHome extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+
+        ),
+      );
   }
 }

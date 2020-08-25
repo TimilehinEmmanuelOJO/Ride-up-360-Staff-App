@@ -25,7 +25,7 @@ class RideHub extends StatelessWidget {
             ),
               child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  SizedBox(height: 20,),
+                  SizedBox(height: 60,),
                   Row(
                     children: <Widget>[
                       SizedBox(width: 20,),
@@ -57,6 +57,9 @@ class RideHub extends StatelessWidget {
                           style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),),
                         ),
                       ),
+                      FlatButton(onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Page2()));
+                      })
                     ],
                   )
                 ],

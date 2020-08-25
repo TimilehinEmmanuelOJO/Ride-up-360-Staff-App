@@ -10,6 +10,15 @@ class RideHub extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: MyHome(),
+    );
+  }
+}
+
+class MyHome extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         body: SafeArea(
           child: Container(
@@ -46,20 +55,20 @@ class RideHub extends StatelessWidget {
                       SizedBox(
                         width: 100,
                       ),
-                      Container(
-                        height: 60,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          color: Colors.white12.withOpacity(0.0),border: Border.all(color: Colors.white),
-                            borderRadius: BorderRadius.all(Radius.circular(30))),
-                        child: Center(
-                          child: Text('WELCOME',
-                          style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),),
+                      FlatButton(onPressed: () => Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Page2()),),
+                        child: Container(
+                          height: 60,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            color: Colors.white12.withOpacity(0.0),border: Border.all(color: Colors.white),
+                              borderRadius: BorderRadius.all(Radius.circular(30))),
+                          child: Center(
+                            child: Text('WELCOME',
+                            style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),),
+                          ),
                         ),
                       ),
-                      FlatButton(onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => Page2()));
-                      })
                     ],
                   )
                 ],

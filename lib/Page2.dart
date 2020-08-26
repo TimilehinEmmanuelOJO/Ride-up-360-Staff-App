@@ -104,20 +104,34 @@ class MyHome extends StatelessWidget {
 
 
 class HomePage extends StatelessWidget {
+
+
+
+  int currentPage = 0;
+
+  GlobalKey bottomNavigationKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         bottomNavigationBar: FancyBottomNavigation(
           tabs: [
-            TabData(iconData: Icons.ac_unit,title: 'timi'),
-            TabData(iconData: Icons.ac_unit, title: 'timi'),
-            TabData(iconData: Icons.ac_unit,title: 'timi'),
+            TabData(iconData: Icons.person,title: 'Profile'),
+            TabData(iconData: Icons.settings_overscan, title: 'Social Media'),
+            TabData(iconData: Icons.settings,title: 'Settings'),
           ],
           onTabChangedListener: (position) {
-            setState((){currentPage = position;});
-          }
+            (() {currentPage = position;});
+          },
         ),
+        body: SafeArea(child: Container(width: 415, height: 750, color: Colors.amber,
+          child:Column(children: <Widget>[SizedBox(height: 20,),
+            Row(children: <Widget>[SizedBox(width: 20,),
+              Container(height: 40, width: 40, decoration: BoxDecoration(
+                color: Colors.black12.withOpacity(0.5), borderRadius: BorderRadius.all(Radius.circular(10))
+              ),child: Center(child: Text('<',style: TextStyle(color: Colors.white, fontSize: 30),)),)
+            ],)],) ,),)
         ),
       );
   }

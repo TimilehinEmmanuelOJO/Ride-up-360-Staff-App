@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ridehub360_staff_app/main.dart';
+import 'package:fancy_bottom_navigation/fancy_bottom_navigation.dart';
 
 class Page2 extends StatelessWidget {
   @override
@@ -107,7 +108,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-
+        bottomNavigationBar: FancyBottomNavigation(
+          tabs: [
+            TabData(iconData: Icons.ac_unit,title: 'timi'),
+            TabData(iconData: Icons.ac_unit, title: 'timi'),
+            TabData(iconData: Icons.ac_unit,title: 'timi'),
+          ],
+          onTabChangedListener: (position) {
+            setState((){currentPage = position;});
+          }
+        ),
         ),
       );
   }

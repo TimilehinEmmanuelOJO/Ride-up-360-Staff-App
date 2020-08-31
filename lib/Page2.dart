@@ -25,14 +25,14 @@ class MyHome extends StatelessWidget {
               SizedBox(
                 height: 500,
               ),
-              Row(
+              Row(mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   SizedBox(
                     width: 6,
                   ),
                   Container(
-                    height: 60,
-                    width: 400,
+                    height: 40,
+                    width: 300,
                     decoration: BoxDecoration(
                         color: Colors.black.withOpacity(0.5),
                         border: Border.all(color: Colors.brown),
@@ -41,14 +41,14 @@ class MyHome extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         SizedBox(
-                          width: 10,
+                          width: 4,
                         ),
                         Text(
                           'Email:',
                           style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'RobotoMono-BoldItalic.ttf',
-                              fontSize: 30,
+                              fontSize: 20,
                               fontWeight: FontWeight.bold,
                               fontStyle: FontStyle.italic),
                         ),
@@ -61,8 +61,8 @@ class MyHome extends StatelessWidget {
                 height: 25,
               ),
               Container(
-                height: 60,
-                width: 400,
+                height: 40,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.black.withOpacity(0.5),
                     border: Border.all(color: Colors.brown),
@@ -71,14 +71,14 @@ class MyHome extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     SizedBox(
-                      width: 10,
+                      width: 4,
                     ),
                     Text(
                       'Password:',
                       style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'RobotoMono-BoldItalic.ttf',
-                          fontSize: 30,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                           fontStyle: FontStyle.italic),
                     ),
@@ -94,8 +94,8 @@ class MyHome extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => HomePage()),
                 ),
                 child: Container(
-                  height: 60,
-                  width: 150,
+                  height: 40,
+                  width: 100,
                   decoration: BoxDecoration(
                       color: Colors.black.withOpacity(0.5),
                       border: Border.all(color: Colors.brown),
@@ -104,14 +104,14 @@ class MyHome extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       SizedBox(
-                        width: 20,
+                        width: 13,
                       ),
                       Text(
                         'SIGN IN',
                         style: TextStyle(
                             color: Colors.white,
                             fontFamily: 'RobotoMono-BoldItalic.ttf',
-                            fontSize: 30,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic),
                       ),
@@ -137,7 +137,7 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           bottomNavigationBar: FancyBottomNavigation(
-            barBackgroundColor: Colors.teal,
+            barBackgroundColor: Colors.black38,
             inactiveIconColor: Colors.white,
             textColor: Colors.white,
             circleColor: Colors.white,
@@ -153,41 +153,21 @@ class HomePage extends StatelessWidget {
               });
             },
           ),
+          appBar: AppBar (leading: Icon(Icons.arrow_back_ios),
+        title: Row(
+          children: <Widget>[SizedBox(width: 100,),
+            Text
+            ('About',style: TextStyle(fontSize: 25),),
+          ],
+        ), backgroundColor: Colors.black45,),
           body: SafeArea(
             child: Container(
               width: 415,
               height: 750,
-              color: Colors.black12,
-              child: Column(
-                children: <Widget>[
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Container(
-                        height: 40,
-                        width: 40,
-                        decoration: BoxDecoration(
-                            color: Colors.black12.withOpacity(0.5),
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(10))),
-                        child: Center(
-                            child: Text(
-                          '<',
-                          style: TextStyle(color: Colors.white, fontSize: 30),
-                        )),
-                      )
-                    ],
-                  ),
-                  Text('ABOUT',style: TextStyle(fontSize: 20),
-                  ),
-                  Image(image: AssetImage('images/nmw.jpg'),)
-                ],
-              ),
+              color: Colors.white,
+              child: Column(children: <Widget>[
+                Text('timi')
+              ],),
             ),
           )),
     );

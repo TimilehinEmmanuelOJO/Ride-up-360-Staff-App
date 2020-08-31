@@ -54,7 +54,7 @@ class MyHome extends StatelessWidget {
                     ),
                     FlatButton(onPressed: () => Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Page2()),),
-                      // TODO: next page connected here
+                      // TODO: next page connects here
                       child: Container(
                         height: 60,
                         width: 200,

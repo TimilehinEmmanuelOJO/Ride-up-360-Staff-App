@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ridehub360_staff_app/main.dart';
 import 'package:fancy_bottom_navigation/fancy_bottom_navigation.dart';
@@ -137,7 +138,7 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           bottomNavigationBar: FancyBottomNavigation(
-            barBackgroundColor: Colors.black38,
+            barBackgroundColor: Colors.lightBlueAccent,
             inactiveIconColor: Colors.white,
             textColor: Colors.white,
             circleColor: Colors.white,
@@ -153,23 +154,50 @@ class HomePage extends StatelessWidget {
               });
             },
           ),
-          appBar: AppBar (leading: Icon(Icons.arrow_back_ios),
+          appBar: AppBar(leading: Icon(Icons.arrow_back_ios),
         title: Row(
           children: <Widget>[SizedBox(width: 100,),
             Text
             ('About',style: TextStyle(fontSize: 25),),
           ],
-        ), backgroundColor: Colors.black45,),
+        ), backgroundColor: Colors.lightBlueAccent,),
           body: SafeArea(
             child: Container(
               width: 415,
               height: 750,
-              color: Colors.white,
-              child: Column(children: <Widget>[
-                Text('timi')
-              ],),
+              color: Colors.lightBlueAccent,
+              child: Column( children: <Widget>[
+                Text('RideHub360.com',style: TextStyle(
+                  fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white
+                ),),
+                SizedBox(height: 10,),
+              Container(width: 350, height: 400, decoration: BoxDecoration(
+                color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(10))), child: Column(
+                children: <Widget>[
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit,color: Colors.white,),SizedBox(width: 40,), Text('What We Do', style: TextStyle(fontSize: 20),)],),),
+                  SizedBox(height: 20,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit), SizedBox(width: 40,),Text('Mission & Vission',style: TextStyle(fontSize: 20))],),),
+                  SizedBox(height: 20,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit), SizedBox(width: 40,),Text('Problem',style: TextStyle(fontSize: 20))],),),
+                  SizedBox(height: 20,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit), SizedBox(width: 40,),Text('Solution',style: TextStyle(fontSize: 20))],),),
+                  SizedBox(height: 20,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit),SizedBox(width: 40,), Text('Impact',style: TextStyle(fontSize: 20))],),),
+                  SizedBox(height: 20,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit),SizedBox(width: 40,), Text('Team',style: TextStyle(fontSize: 20))],),),
+                  SizedBox(height: 20,),
+
+                ],
+              ),
+              ),SizedBox(height: 10,),
+                Container(width: 350, height: 180, decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
+                ),],),
             ),
-          )),
+          ),),
     );
   }
 }
+

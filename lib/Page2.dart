@@ -165,36 +165,44 @@ class HomePage extends StatelessWidget {
             child: Container(
               width: 415,
               height: 750,
-              color: Colors.lightBlueAccent,
+              color: Colors.black.withOpacity(0.5),
               child: Column( children: <Widget>[
                 Text('RideHub360.com',style: TextStyle(
                   fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white
                 ),),
                 SizedBox(height: 10,),
               Container(width: 350, height: 400, decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.black.withOpacity(0.5),
                   borderRadius: BorderRadius.all(Radius.circular(10))), child: Column(
                 children: <Widget>[
-                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit,color: Colors.white,),SizedBox(width: 40,), Text('What We Do', style: TextStyle(fontSize: 20),)],),),
-                  SizedBox(height: 20,),
-                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit), SizedBox(width: 40,),Text('Mission & Vission',style: TextStyle(fontSize: 20))],),),
-                  SizedBox(height: 20,),
-                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit), SizedBox(width: 40,),Text('Problem',style: TextStyle(fontSize: 20))],),),
-                  SizedBox(height: 20,),
-                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit), SizedBox(width: 40,),Text('Solution',style: TextStyle(fontSize: 20))],),),
-                  SizedBox(height: 20,),
-                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit),SizedBox(width: 40,), Text('Impact',style: TextStyle(fontSize: 20))],),),
-                  SizedBox(height: 20,),
-                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.ac_unit),SizedBox(width: 40,), Text('Team',style: TextStyle(fontSize: 20))],),),
-                  SizedBox(height: 20,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white,),SizedBox(width: 40), Text('What We Do', style: TextStyle(fontSize: 20,color: Colors.white),)],),),
+                  SizedBox(height: 14,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust, color: Colors.white), SizedBox(width: 40,),Text('Mission & Vission',style: TextStyle(fontSize: 20,color: Colors.white))],),),
+                  SizedBox(height: 14,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white), SizedBox(width: 40,),Text('Problem',style: TextStyle(fontSize: 20,color: Colors.white))],),),
+                  SizedBox(height: 14,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white), SizedBox(width: 40,),Text('Solution',style: TextStyle(fontSize: 20,color: Colors.white))],),),
+                  SizedBox(height: 14,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white),SizedBox(width: 40,), Text('Impact',style: TextStyle(fontSize: 20,color: Colors.white))],),),
+                  SizedBox(height: 14,),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white),SizedBox(width: 40,), Text('Team',style: TextStyle(fontSize: 20,color: Colors.white))],),),
+                  SizedBox(height: 14,),
 
                 ],
               ),
               ),SizedBox(height: 10,),
                 Container(width: 350, height: 180, decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.black.withOpacity(0.5),
                     borderRadius: BorderRadius.all(Radius.circular(10))),
-                ),],),
+                child: Column(children: <Widget>[
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.location_on,color: Colors.white,),SizedBox(width: 20), Text('OAU Central Market, Ile-Ife', style: TextStyle(fontSize: 20,color: Colors.white),)],),),
+                  Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.email, color: Colors.white), SizedBox(width: 20,),Text('ridehub360@gmail.com',style: TextStyle(fontSize: 20,color: Colors.white))],),),
+                  Container(width:150,height:40, child: Row(children: <Widget>[Icon(Icons.email, color: Colors.white), SizedBox(width: 10,),Text('',style: TextStyle(fontSize: 20,color: Colors.white),), Icon(Icons.email, color: Colors.white)],),),
+                  Container(width:150,height:30, child: Row(children: <Widget>[Icon(Icons.email, color: Colors.white), SizedBox(width: 20,),Text('',style: TextStyle(fontSize: 20,color: Colors.white))],),),
+
+
+
+                ],),),],),
             ),
           ),),
     );

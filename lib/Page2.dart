@@ -170,49 +170,95 @@ class HomePage extends StatelessWidget {
                     fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/e8/c4/ed/e8c4ed52c5df6a8857331edc531bdb35.jpg'))),
               child: Column( children: <Widget>[
                 SizedBox(height: 40,),
-              Container(width: 350, height: 400, decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.8),
-                  borderRadius: BorderRadius.all(Radius.circular(10))), child: Column(
+              Column(
+                children: <Widget>[
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, //TODO: side by side starts here for the first two containers
                 children: <Widget>[
                   FlatButton(
                       onPressed: () => Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => Page3()),
                       ),
-                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.orangeAccent,),SizedBox(width: 40), Text('What We Do', style: TextStyle(fontSize: 20,color: Colors.orangeAccent),)],),)),
-                  SizedBox(height: 14,),
+                      child: Container(width:150,height:120, decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(1),
+                          borderRadius: BorderRadius.all(Radius.circular(20))),child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Icon(Icons.adjust,color: Colors.orangeAccent,),SizedBox(width: 20), Text('Who', style: TextStyle(fontSize: 20,color: Colors.orangeAccent),),
+                            ],
+                          ),)),
+
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page4()),
                   ),
-                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust, color: Colors.pink), SizedBox(width: 40,),Text('Mission & Vission',style: TextStyle(fontSize: 20,color: Colors.pink))],),)),
-                  SizedBox(height: 14,),
+                      child: Container(width:150,height:120, decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(1),
+                          borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Icon(Icons.adjust, color: Colors.pink), SizedBox(width: 20,),Text('Mon',style: TextStyle(fontSize: 20,color: Colors.pink)),
+                            ],
+                          ),)),
+
+                ],
+              ),
+              SizedBox(height: 14,),
+              Row(
+                children: <Widget>[
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page5()),
                   ),
-                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.blue), SizedBox(width: 40,),Text('Problem',style: TextStyle(fontSize: 20,color: Colors.blue))],),)),
-                  SizedBox(height: 14,),
+                      child: Container(width:150,height:120, decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(1),
+                          borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Icon(Icons.adjust,color: Colors.blue), SizedBox(width: 20,),Text('Pro',style: TextStyle(fontSize: 20,color: Colors.blue)),
+                            ],
+                          ),)),
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page6()),
-                  ),child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.purple), SizedBox(width: 40,),Text('Solution',style: TextStyle(fontSize: 20,color: Colors.purple))],),)),
-                  SizedBox(height: 14,),
+                  ),child: Container(width:150,height:120, decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(1),
+                      borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(Icons.adjust,color: Colors.purple), SizedBox(width: 20,),Text('Son',style: TextStyle(fontSize: 20,color: Colors.purple)),
+                        ],
+                      ),)),
+
+                ],
+              ),
+              SizedBox(height: 14,),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page7()),
-                  ),child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.brown),SizedBox(width: 40,), Text('Impact',style: TextStyle(fontSize: 20,color: Colors.brown))],),)),
-                  SizedBox(height: 14,),
+                  ),child: Container(width:150,height:120, decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(1),
+                      borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(Icons.adjust,color: Colors.brown),SizedBox(width: 20,), Text('Impact',style: TextStyle(fontSize: 20,color: Colors.brown)),
+                        ],
+                      ),)),
+
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page8()),
                   ),
-                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.yellow),SizedBox(width: 40,), Text('Team',style: TextStyle(fontSize: 20,color: Colors.yellow))],),)),
-                  SizedBox(height: 14,),
+                      child: Container(width:150,height:120, decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(1),
+                          borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Icon(Icons.adjust,color: Colors.yellow),SizedBox(width: 20,), Text('Team',style: TextStyle(fontSize: 20,color: Colors.yellow)),
+                            ],
+                          ),)),
+                ],
+              ),
+               SizedBox(height: 25,),
 
                 ],
               ),
-              ),SizedBox(height: 10,),
                 Container(width: 350, height: 180, decoration: BoxDecoration(
                     color: Colors.black.withOpacity(0.5),
                     borderRadius: BorderRadius.all(Radius.circular(10))),

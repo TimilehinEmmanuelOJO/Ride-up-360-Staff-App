@@ -165,14 +165,14 @@ class HomePage extends StatelessWidget {
             child: Container(
               width: 415,
               height: 750,
-              color: Colors.black.withOpacity(0.5),
+              color: Colors.red.withOpacity(0.8),
               child: Column( children: <Widget>[
-                Text('RideHub360.com',style: TextStyle(
-                  fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white
+                Text('HOME ',style: TextStyle(
+                  fontSize: 40, fontWeight: FontWeight.normal, color: Colors.white
                 ),),
                 SizedBox(height: 10,),
               Container(width: 350, height: 400, decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.blue.withOpacity(0.8),
                   borderRadius: BorderRadius.all(Radius.circular(10))), child: Column(
                 children: <Widget>[
                   FlatButton(
@@ -180,13 +180,13 @@ class HomePage extends StatelessWidget {
                         context,
                         MaterialPageRoute(builder: (context) => Page3()),
                       ),
-                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white,),SizedBox(width: 40), Text('What We Do', style: TextStyle(fontSize: 20,color: Colors.white),)],),)),
+                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.orangeAccent,),SizedBox(width: 40), Text('What We Do', style: TextStyle(fontSize: 20,color: Colors.orangeAccent),)],),)),
                   SizedBox(height: 14,),
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page4()),
                   ),
-                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust, color: Colors.white), SizedBox(width: 40,),Text('Mission & Vission',style: TextStyle(fontSize: 20,color: Colors.white))],),)),
+                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust, color: Colors.pink), SizedBox(width: 40,),Text('Mission & Vission',style: TextStyle(fontSize: 20,color: Colors.pink))],),)),
                   SizedBox(height: 14,),
                   FlatButton(onPressed: () => Navigator.push(
                     context,

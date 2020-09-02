@@ -102,8 +102,34 @@ class Page5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          body: Container(color: Colors.blue,)
+      home: Scaffold(appBar: AppBar (backgroundColor:Colors.blue,
+        leading: FlatButton( onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => HomePage()),
+        ),child: Icon(Icons.arrow_back_ios)),),
+        body: SafeArea(
+          child: Container(width:450,height:800, color: Colors.blue.withOpacity(1),
+            child: Column(
+              children: <Widget>[SizedBox(height: 30,),
+                Container(width: 350, height: 150, decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                ),
+                  child: Column(
+                    children: <Widget>[SizedBox(height: 10,),Text('PROBLEM',style: TextStyle(
+                      decorationStyle: TextDecorationStyle.dotted,fontSize: 25,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic,
+                    ), ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Text('https://ridehub360.com/problem',
+                          style: TextStyle(fontSize: 22,fontWeight: FontWeight.normal, letterSpacing: 0.3, fontStyle: FontStyle.italic),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),),
+        ),
       ),
     );
   }
@@ -113,8 +139,34 @@ class Page6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          body: Container(color: Colors.purple,)
+      home: Scaffold(appBar: AppBar (backgroundColor:Colors.purple,
+        leading: FlatButton( onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => HomePage()),
+        ),child: Icon(Icons.arrow_back_ios)),),
+        body: SafeArea(
+          child: Container(width:450,height:800, color: Colors.purple.withOpacity(1),
+            child: Column(
+              children: <Widget>[SizedBox(height: 30,),
+                Container(width: 350, height: 150, decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                ),
+                  child: Column(
+                    children: <Widget>[SizedBox(height: 10,),Text('SOLUTION',style: TextStyle(
+                      decorationStyle: TextDecorationStyle.dotted,fontSize: 25,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic,
+                    ), ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Text('https://ridehub360.com/solution',
+                          style: TextStyle(fontSize: 22,fontWeight: FontWeight.normal, letterSpacing: 0.3, fontStyle: FontStyle.italic),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),),
+        ),
       ),
     );
   }
@@ -124,8 +176,34 @@ class Page7 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          body: Container(color: Colors.deepOrange,)
+      home: Scaffold(appBar: AppBar (backgroundColor:Colors.brown,
+        leading: FlatButton( onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => HomePage()),
+        ),child: Icon(Icons.arrow_back_ios)),),
+        body: SafeArea(
+          child: Container(width:450,height:800, color: Colors.brown.withOpacity(1),
+            child: Column(
+              children: <Widget>[SizedBox(height: 30,),
+                Container(width: 350, height: 150, decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                ),
+                  child: Column(
+                    children: <Widget>[SizedBox(height: 10,),Text('IMPACT',style: TextStyle(
+                      decorationStyle: TextDecorationStyle.dotted,fontSize: 25,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic,
+                    ), ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Text('https://ridehub360.com/impact',
+                          style: TextStyle(fontSize: 22,fontWeight: FontWeight.normal, letterSpacing: 0.3, fontStyle: FontStyle.italic),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),),
+        ),
       ),
     );
   }
@@ -135,8 +213,34 @@ class Page8 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          body: Container(color: Colors.yellow,)
+      home:Scaffold(appBar: AppBar (backgroundColor:Colors.yellow,
+        leading: FlatButton( onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => HomePage()),
+        ),child: Icon(Icons.arrow_back_ios)),),
+        body: SafeArea(
+          child: Container(width:450,height:800, color: Colors.yellow.withOpacity(1),
+            child: Column(
+              children: <Widget>[SizedBox(height: 30,),
+                Container(width: 350, height: 150, decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                ),
+                  child: Column(
+                    children: <Widget>[SizedBox(height: 10,),Text('TEAM',style: TextStyle(
+                      decorationStyle: TextDecorationStyle.dotted,fontSize: 25,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic,
+                    ), ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Text('https://ridehub360.com/bio',
+                          style: TextStyle(fontSize: 22,fontWeight: FontWeight.normal, letterSpacing: 0.3, fontStyle: FontStyle.italic),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),),
+        ),
       ),
     );
   }

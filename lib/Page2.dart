@@ -172,7 +172,7 @@ class HomePage extends StatelessWidget {
                 ),),
                 SizedBox(height: 10,),
               Container(width: 350, height: 400, decoration: BoxDecoration(
-                color: Colors.blue.withOpacity(0.8),
+                color: Colors.black.withOpacity(0.8),
                   borderRadius: BorderRadius.all(Radius.circular(10))), child: Column(
                 children: <Widget>[
                   FlatButton(
@@ -192,23 +192,23 @@ class HomePage extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) => Page5()),
                   ),
-                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white), SizedBox(width: 40,),Text('Problem',style: TextStyle(fontSize: 20,color: Colors.white))],),)),
+                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.blue), SizedBox(width: 40,),Text('Problem',style: TextStyle(fontSize: 20,color: Colors.blue))],),)),
                   SizedBox(height: 14,),
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page6()),
-                  ),child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white), SizedBox(width: 40,),Text('Solution',style: TextStyle(fontSize: 20,color: Colors.white))],),)),
+                  ),child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.purple), SizedBox(width: 40,),Text('Solution',style: TextStyle(fontSize: 20,color: Colors.purple))],),)),
                   SizedBox(height: 14,),
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page7()),
-                  ),child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white),SizedBox(width: 40,), Text('Impact',style: TextStyle(fontSize: 20,color: Colors.white))],),)),
+                  ),child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.brown),SizedBox(width: 40,), Text('Impact',style: TextStyle(fontSize: 20,color: Colors.brown))],),)),
                   SizedBox(height: 14,),
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page8()),
                   ),
-                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.white),SizedBox(width: 40,), Text('Team',style: TextStyle(fontSize: 20,color: Colors.white))],),)),
+                      child: Container(width:300,height:50, child: Row(children: <Widget>[Icon(Icons.adjust,color: Colors.yellow),SizedBox(width: 40,), Text('Team',style: TextStyle(fontSize: 20,color: Colors.yellow))],),)),
                   SizedBox(height: 14,),
 
                 ],

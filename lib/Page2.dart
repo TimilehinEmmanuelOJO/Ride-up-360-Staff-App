@@ -165,12 +165,11 @@ class HomePage extends StatelessWidget {
             child: Container(
               width: 415,
               height: 750,
-              color: Colors.red.withOpacity(0.8),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/e8/c4/ed/e8c4ed52c5df6a8857331edc531bdb35.jpg'))),
               child: Column( children: <Widget>[
-                Text('HOME ',style: TextStyle(
-                  fontSize: 40, fontWeight: FontWeight.normal, color: Colors.white
-                ),),
-                SizedBox(height: 10,),
+                SizedBox(height: 40,),
               Container(width: 350, height: 400, decoration: BoxDecoration(
                 color: Colors.black.withOpacity(0.8),
                   borderRadius: BorderRadius.all(Radius.circular(10))), child: Column(

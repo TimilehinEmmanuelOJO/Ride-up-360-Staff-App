@@ -14,17 +14,19 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar (backgroundColor:Colors.orangeAccent,
+      home: Scaffold(appBar: AppBar (backgroundColor:Colors.white24.withOpacity(0.4),
         leading: FlatButton( onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => HomePage()),
         ),child: Icon(Icons.arrow_back_ios)),),
         body: SafeArea(
-          child: Container(width:450,height:800, color: Colors.orangeAccent.withOpacity(1),
+          child: Container(width:450,height:800, decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/c2/4d/3f/c24d3f01cfbc21b55e65acf04eabe291.jpg'))),
             child: Column(
               children: <Widget>[SizedBox(height: 30,),
                 Container(width: 350, height: 550, decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                  borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.7)
                 ),
                   child: Column(
                     children: <Widget>[Text('WHAT WE DO',style: TextStyle(
@@ -57,17 +59,19 @@ class Page4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-        home: Scaffold(appBar: AppBar (backgroundColor:Colors.pink,
+        home: Scaffold(appBar: AppBar (backgroundColor:Colors.white60,
           leading: FlatButton( onPressed: () => Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => HomePage()),
           ),child: Icon(Icons.arrow_back_ios)),),
         body: SafeArea(
-          child: Container(width:450,height:800, color: Colors.pink.withOpacity(1),
+          child: Container(width:450,height:800,decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/bd/c6/5d/bdc65d1d4e158e0bcf694aa2bf593a99.jpg'))),
           child: Column(
             children: <Widget>[SizedBox(height: 30,),
               Container(width: 350, height: 550, decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                  borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.5)
               ),
                 child: Column(
                   children: <Widget>[Text('MISSION AND VISION',style: TextStyle(
@@ -102,17 +106,19 @@ class Page5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar (backgroundColor:Colors.blue,
+      home: Scaffold(appBar: AppBar (backgroundColor:Colors.blue.withOpacity(0.1),
         leading: FlatButton( onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => HomePage()),
         ),child: Icon(Icons.arrow_back_ios)),),
         body: SafeArea(
-          child: Container(width:450,height:800, color: Colors.blue.withOpacity(1),
+          child: Container(width:450,height:800, decoration: BoxDecoration(
+          image: DecorationImage(
+          fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/e9/7a/df/e97adf2fa1831a9c06405b8641d4734f.jpg'))),
             child: Column(
               children: <Widget>[SizedBox(height: 30,),
                 Container(width: 350, height: 150, decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.5)
                 ),
                   child: Column(
                     children: <Widget>[SizedBox(height: 10,),Text('PROBLEM',style: TextStyle(
@@ -139,17 +145,19 @@ class Page6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar (backgroundColor:Colors.purple,
+      home: Scaffold(appBar: AppBar (backgroundColor:Colors.purple.withOpacity(0.1),
         leading: FlatButton( onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => HomePage()),
         ),child: Icon(Icons.arrow_back_ios)),),
         body: SafeArea(
-          child: Container(width:450,height:800, color: Colors.purple.withOpacity(1),
+          child: Container(width:450,height:800, decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/be/7d/38/be7d380cad50bcead8c30dbef2c14e5d.jpg'))),
             child: Column(
               children: <Widget>[SizedBox(height: 30,),
                 Container(width: 350, height: 150, decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.8)
                 ),
                   child: Column(
                     children: <Widget>[SizedBox(height: 10,),Text('SOLUTION',style: TextStyle(
@@ -176,17 +184,19 @@ class Page7 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar (backgroundColor:Colors.brown,
+      home: Scaffold(appBar: AppBar (backgroundColor:Colors.white60,
         leading: FlatButton( onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => HomePage()),
         ),child: Icon(Icons.arrow_back_ios)),),
         body: SafeArea(
-          child: Container(width:450,height:800, color: Colors.brown.withOpacity(1),
+          child: Container(width:450,height:800, decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/564x/54/82/60/5482606003004bbfdbe056b7d6345961.jpg'))),
             child: Column(
               children: <Widget>[SizedBox(height: 30,),
                 Container(width: 350, height: 150, decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.1)
                 ),
                   child: Column(
                     children: <Widget>[SizedBox(height: 10,),Text('IMPACT',style: TextStyle(
@@ -213,17 +223,19 @@ class Page8 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:Scaffold(appBar: AppBar (backgroundColor:Colors.yellow,
+      home:Scaffold(appBar: AppBar (backgroundColor:Colors.grey,
         leading: FlatButton( onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => HomePage()),
         ),child: Icon(Icons.arrow_back_ios)),),
         body: SafeArea(
-          child: Container(width:450,height:800, color: Colors.yellow.withOpacity(1),
+          child: Container(width:450,height:800, decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/f5/d5/cb/f5d5cbe4c181213114cc4d5344b6a883.jpg'))),
             child: Column(
               children: <Widget>[SizedBox(height: 30,),
                 Container(width: 350, height: 150, decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.5)
                 ),
                   child: Column(
                     children: <Widget>[SizedBox(height: 10,),Text('TEAM',style: TextStyle(
@@ -245,3 +257,4 @@ class Page8 extends StatelessWidget {
     );
   }
 }
+

@@ -167,23 +167,23 @@ class HomePage extends StatelessWidget {
               height: 750,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/e8/c4/ed/e8c4ed52c5df6a8857331edc531bdb35.jpg'))),
+                    fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/e6/e7/77/e6e777c515e2064e0b6fdc3d8d60d4c7.jpg'))),
               child: Column( children: <Widget>[
                 SizedBox(height: 40,),
               Column(
                 children: <Widget>[
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, //TODO: side by side starts here for the first two containers
+              Row(mainAxisAlignment: MainAxisAlignment.end, //TODO: side by side starts here for the first two containers
                 children: <Widget>[
                   FlatButton(
                       onPressed: () => Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => Page3()),
                       ),
-                      child: Container(width:150,height:120, decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(1),
+                      child: Container(width:120,height:100, decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.99999),
                           borderRadius: BorderRadius.all(Radius.circular(20))),child: Column(mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Icon(Icons.adjust,color: Colors.orangeAccent,),SizedBox(width: 20), Text('Who', style: TextStyle(fontSize: 20,color: Colors.orangeAccent),),
+                              Icon(Icons.adjust,color: Colors.orangeAccent,),SizedBox(width: 20), Text('What We Do', style: TextStyle(fontSize: 20,color: Colors.orangeAccent),),
                             ],
                           ),)),
 
@@ -195,7 +195,7 @@ class HomePage extends StatelessWidget {
                           color: Colors.white.withOpacity(1),
                           borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Icon(Icons.adjust, color: Colors.pink), SizedBox(width: 20,),Text('Mon',style: TextStyle(fontSize: 20,color: Colors.pink)),
+                              Icon(Icons.adjust, color: Colors.pink), SizedBox(width: 20,),Text(' Mission \n    and\n Vission',style: TextStyle(fontSize: 20,color: Colors.pink)),
                             ],
                           ),)),
 
@@ -212,29 +212,29 @@ class HomePage extends StatelessWidget {
                           color: Colors.white.withOpacity(1),
                           borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Icon(Icons.adjust,color: Colors.blue), SizedBox(width: 20,),Text('Pro',style: TextStyle(fontSize: 20,color: Colors.blue)),
+                              Icon(Icons.adjust,color: Colors.blue), SizedBox(width: 20,),Text('Problem',style: TextStyle(fontSize: 20,color: Colors.blue)),
                             ],
                           ),)),
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page6()),
-                  ),child: Container(width:150,height:120, decoration: BoxDecoration(
+                  ),child: Container(width:120,height:100, decoration: BoxDecoration(
                       color: Colors.white.withOpacity(1),
                       borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Icon(Icons.adjust,color: Colors.purple), SizedBox(width: 20,),Text('Son',style: TextStyle(fontSize: 20,color: Colors.purple)),
+                          Icon(Icons.adjust,color: Colors.purple), SizedBox(width: 20,),Text('Solution',style: TextStyle(fontSize: 20,color: Colors.purple)),
                         ],
                       ),)),
 
                 ],
               ),
               SizedBox(height: 14,),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Row(mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
                   FlatButton(onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Page7()),
-                  ),child: Container(width:150,height:120, decoration: BoxDecoration(
+                  ),child: Container(width:120,height:100, decoration: BoxDecoration(
                       color: Colors.white.withOpacity(1),
                       borderRadius: BorderRadius.all(Radius.circular(20))), child: Column(mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -264,13 +264,8 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Column(
                   children: <Widget>[
-                  Container(width:300,height:40, child: Row(children: <Widget>[Icon(Icons.location_on,color: Colors.white,),SizedBox(width: 20), Text('OAU Central Market, Ile-Ife', style: TextStyle(fontSize: 20,color: Colors.white),)],),),
+                  Container(width:300,height:100, child: Row(children: <Widget>[Icon(Icons.location_on,color: Colors.white,),SizedBox(width: 20), Text('OAU Central Market, Ile-Ife', style: TextStyle(fontSize: 20,color: Colors.white),)],),),
                   Container(width:300,height:40, child: Row(children: <Widget>[Icon(Icons.email, color: Colors.white), SizedBox(width: 20,),Text('ridehub360@gmail.com',style: TextStyle(fontSize: 20,color: Colors.white))],),),
-                  Container(width:300,height:40, child: Row(crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[Icon(Icons.email, color: Colors.white), SizedBox(width: 0,),Text('@ridehub360',style: TextStyle(fontSize: 20,color: Colors.white),),SizedBox(width: 5,), Icon(Icons.email, color: Colors.white),SizedBox(width: 5,),Text('@ridehub360',style: TextStyle(fontSize: 20,color: Colors.white))],),),
-                  Container(width:300,height:30, child: Row(
-                    children: <Widget>[Icon(Icons.email, color: Colors.white), SizedBox(width: 5,),Text('ridehub360 ltd',style: TextStyle(fontSize: 20,color: Colors.white),),SizedBox(width: 5,), Icon(Icons.email, color: Colors.white),SizedBox(width: 5,),Text('@ridehubltd',style: TextStyle(fontSize: 20,color: Colors.white),),],),),
-
                 ],),),],),
             ),
           ),),

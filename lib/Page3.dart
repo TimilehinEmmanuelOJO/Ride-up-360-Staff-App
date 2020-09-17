@@ -233,14 +233,14 @@ class Page8 extends StatelessWidget {
               image: DecorationImage(
                   fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/f5/d5/cb/f5d5cbe4c181213114cc4d5344b6a883.jpg'))),
             child: Column(
-              children: <Widget>[SizedBox(height: 30,),
-                Container(width: 350, height: 600, decoration: BoxDecoration(
+              children: <Widget>[SizedBox(height: 20,),
+                Container(width: 350, height: 650, decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.5)
                 ),
-                  child: Column(
-                    children: <Widget>[SizedBox(height: 10,),Text('TEAM',style: TextStyle(
+                  child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[SizedBox(height: 8,),Text('TEAM',style: TextStyle(
                       decorationStyle: TextDecorationStyle.dotted,fontSize: 25,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic,
-                    ), ),SizedBox(height: 10,),
+                    ), ),SizedBox(height: 0,),
                       Column(
                         children: <Widget>[
                           Row(children: <Widget>[SizedBox(width: 20,),
@@ -259,61 +259,61 @@ class Page8 extends StatelessWidget {
                             SizedBox(width: 10,),Column(
                               children: <Widget>[
                                 Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Marketing/Sales \nManager RideHub360 Ltd ",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                               ],)
                           ],),
                           SizedBox(height: 10,),
                           Row(children: <Widget>[SizedBox(width: 20,),
-                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            CircleAvatar(backgroundImage: AssetImage("images/joe.jpg"),radius: 30,),
                             SizedBox(width: 10,),Column(
                               children: <Widget>[
-                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                                Text("JOSEPH OLUGBOHUNMI",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Operations \nManager RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                               ],)
                           ],),
                           SizedBox(height: 10,),
                           Row(children: <Widget>[SizedBox(width: 20,),
-                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            CircleAvatar(backgroundImage: AssetImage("images/tim.jpg"),radius: 30,),
                             SizedBox(width: 10,),Column(
                               children: <Widget>[
-                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                                Text("TIMILEHIN OJO",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Procurement Manager.\n RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                               ],)
                           ],),
                           SizedBox(height: 10,),
                           Row(children: <Widget>[SizedBox(width: 20,),
-                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            CircleAvatar(backgroundImage: AssetImage("images/seun.jpg"),radius: 30,),
                             SizedBox(width: 10,),Column(
                               children: <Widget>[
-                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                                Text("SEUN ADEMODI",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Technical Lead/Manager.\n RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                               ],)
                           ],),
                           SizedBox(height: 10,),
                           Row(children: <Widget>[SizedBox(width: 20,),
-                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            CircleAvatar(backgroundImage: AssetImage("images/emeka.jpg"),radius: 30,),
                             SizedBox(width: 10,),Column(
                               children: <Widget>[
-                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                                Text("EMEKA AKPEVWE",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Creative Lead/Manager. \nRideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                               ],)
                           ],),
                           SizedBox(height: 10,),
                           Row(children: <Widget>[SizedBox(width: 20,),
-                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            CircleAvatar(backgroundImage: AssetImage("images/dayo.jpg"),radius: 30,),
                             SizedBox(width: 10,),Column(
                               children: <Widget>[
-                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                                Text("ADEDAYO ADEBAYO",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Head,Creative Sub-Unit \nRideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                               ],)
                           ],),
                           SizedBox(height: 10,),
                           Row(children: <Widget>[SizedBox(width: 20,),
-                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            CircleAvatar(backgroundImage: AssetImage("images/wale.jpg"),radius: 30,),
                             SizedBox(width: 10,),Column(
                               children: <Widget>[
-                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                                Text("WALE AKINOLA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Human Resource Manager\n RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                               ],)
                           ],)
                         ],

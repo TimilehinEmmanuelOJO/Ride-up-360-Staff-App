@@ -240,14 +240,86 @@ class Page8 extends StatelessWidget {
                   child: Column(
                     children: <Widget>[SizedBox(height: 10,),Text('TEAM',style: TextStyle(
                       decorationStyle: TextDecorationStyle.dotted,fontSize: 25,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic,
-                    ), ),
-                      Row(children: <Widget>[
-                        CircleAvatar(backgroundImage: NetworkImage("https://ridehub360.com//view/assets/images/team/adesina_olanrewaju_ezekiel.jpg"),radius: 30,)
-                      ],)
+                    ), ),SizedBox(height: 10,),
+                      Column(
+                        children: <Widget>[
+                          Row(children: <Widget>[SizedBox(width: 20,),
+                            CircleAvatar(backgroundImage: AssetImage("images/lanre.jpg"),radius: 30,),
+                            SizedBox(width: 10,),Column(
+                              children: <Widget>[
+                                Text("LANRE ADESHINA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.normal),),
+                              ],
+                            ),
                     ],
                   ),
-                ),
-              ],
+                          SizedBox(height: 10,),
+                          Row(children: <Widget>[SizedBox(width: 20,),
+                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            SizedBox(width: 10,),Column(
+                              children: <Widget>[
+                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                              ],)
+                          ],),
+                          SizedBox(height: 10,),
+                          Row(children: <Widget>[SizedBox(width: 20,),
+                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            SizedBox(width: 10,),Column(
+                              children: <Widget>[
+                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                              ],)
+                          ],),
+                          SizedBox(height: 10,),
+                          Row(children: <Widget>[SizedBox(width: 20,),
+                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            SizedBox(width: 10,),Column(
+                              children: <Widget>[
+                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                              ],)
+                          ],),
+                          SizedBox(height: 10,),
+                          Row(children: <Widget>[SizedBox(width: 20,),
+                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            SizedBox(width: 10,),Column(
+                              children: <Widget>[
+                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                              ],)
+                          ],),
+                          SizedBox(height: 10,),
+                          Row(children: <Widget>[SizedBox(width: 20,),
+                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            SizedBox(width: 10,),Column(
+                              children: <Widget>[
+                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                              ],)
+                          ],),
+                          SizedBox(height: 10,),
+                          Row(children: <Widget>[SizedBox(width: 20,),
+                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            SizedBox(width: 10,),Column(
+                              children: <Widget>[
+                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                              ],)
+                          ],),
+                          SizedBox(height: 10,),
+                          Row(children: <Widget>[SizedBox(width: 20,),
+                            CircleAvatar(backgroundImage: AssetImage("images/ore.jpg"),radius: 30,),
+                            SizedBox(width: 10,),Column(
+                              children: <Widget>[
+                                Text("OYINLADE OREOLUWA",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                Text("Co-founder, Quality Control \nManager. RideHub360 Ltd",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                              ],)
+                          ],)
+                        ],
+                      ),
+                ],),
+          ),],
             ),),
         ),
       ),

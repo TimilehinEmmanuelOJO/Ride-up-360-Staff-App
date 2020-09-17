@@ -234,19 +234,16 @@ class Page8 extends StatelessWidget {
                   fit: BoxFit.cover, image: NetworkImage('https://i.pinimg.com/236x/f5/d5/cb/f5d5cbe4c181213114cc4d5344b6a883.jpg'))),
             child: Column(
               children: <Widget>[SizedBox(height: 30,),
-                Container(width: 350, height: 150, decoration: BoxDecoration(
+                Container(width: 350, height: 600, decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.5)
                 ),
                   child: Column(
                     children: <Widget>[SizedBox(height: 10,),Text('TEAM',style: TextStyle(
                       decorationStyle: TextDecorationStyle.dotted,fontSize: 25,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic,
                     ), ),
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Text('https://ridehub360.com/bio',
-                          style: TextStyle(fontSize: 22,fontWeight: FontWeight.normal, letterSpacing: 0.3, fontStyle: FontStyle.italic),
-                        ),
-                      ),
+                      Row(children: <Widget>[
+                        CircleAvatar(backgroundImage: NetworkImage("https://ridehub360.com//view/assets/images/team/adesina_olanrewaju_ezekiel.jpg"),radius: 30,)
+                      ],)
                     ],
                   ),
                 ),

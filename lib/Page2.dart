@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fancy_bottom_navigation/fancy_bottom_navigation.dart';
 import 'package:ridehub360_staff_app/Page3.dart';
-import 'package:ridehub360_staff_app/Page9.dart';
+
 
 class Page2 extends StatelessWidget {
   @override

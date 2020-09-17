@@ -235,7 +235,7 @@ class Page8 extends StatelessWidget {
             child: Column(
               children: <Widget>[SizedBox(height: 20,),
                 Container(width: 350, height: 650, decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.5)
+                    borderRadius: BorderRadius.all(Radius.circular(20)),color: Colors.white.withOpacity(0.8)
                 ),
                   child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[SizedBox(height: 8,),Text('TEAM',style: TextStyle(
